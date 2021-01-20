@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#455A64"
+    tools:context="com.test.Calculator.MainActivityMain">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:layout_width="205dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="208dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/rbAbout"
+                android:layout_width="176dp"
+                android:layout_height="6dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:onClick="onClick"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="About" />
+
+            <RadioButton
+                android:id="@+id/rbCalculator"
+                android:layout_width="176dp"
+                android:layout_height="7dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:onClick="onClick"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Calculator" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="500dp"
+            android:background="#FF9800"
+            android:onClick="Logout"
+            android:text="Logout"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/tbtn"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="64dp"
+            android:background="#FF9800"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            android:textOff="Active Radio Buttons"
+            android:textOn="Deactive Radio Buttons"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
